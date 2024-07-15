@@ -62,18 +62,9 @@ makeSample() {
     {'text': '\u{1B}|8vC Font height magnification x8\n'},
   ];
 
-    //바코드 property 값 안드로이드, IOS 다름.
-    //바코드 symbology 값이 다르기때문에 사용자의 디바이스 파악 후 다르게 설정해줍니다. 
-    //android : btprinter.BARCODE_TYPE_QRCODE 
-    //ios : 204
-	const mobileType = navigator.userAgent.toLowerCase();
-	if(mobileType.indexOf('android')>-1){
-		printText.push({data:'https://www.comware.co.kr/solution/baljugo',  symbology : btprinter.BARCODE_TYPE_QRCODE, alignment: btprinter.ALIGNMENT_CENTER});
-	}
-	else if (mobileType.indexOf('iphone') > -1 || mobileType.indexOf('ipad') > -1 || mobileType.indexOf('ipod') > -1)
-	{
-		printText.push({data:'https://www.comware.co.kr/solution/baljugo',  symbology : 204, alignment: btprinter.ALIGNMENT_CENTER});
-	}
+   //QR CODE 출력
+	printText.push({data:'https://www.comware.co.kr/solution/baljugo',  symbology : btprinter.BARCODE_TYPE_QRCODE, alignment: btprinter.ALIGNMENT_CENTER});
+	//바코드 출력
 	printText.push({data: '123456789012' , symbology : btprinter.BARCODE_TYPE_ITF, alignment : btprinter.ALIGNMENT_CENTER })
 
 	console.log(printText); // 가공된 데이터 확인
