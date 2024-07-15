@@ -36,7 +36,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.6
   webview_flutter: ^4.8.0
-  bixolon_btprinter: ^0.1.0
+  bixolon_btprinter: ^0.1.1
   flutter_dotenv: ^5.1.0
 
 dev_dependencies:
