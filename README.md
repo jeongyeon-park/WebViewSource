@@ -2,10 +2,14 @@
 
  [플러그인 배포 링크](https://pub.dev/packages/bixolon_btprinter) 
 - bixolon_btprinter 플러그인 개발하여 사용
-- bixolon_btprinter: ^0.0.4 사용
+- bixolon_btprinter: ^0.1.1 사용
+- flutter_dotenv(env 파일 사용하기위한 플러그인)
 
 ## Getting Started
 flutter pub get 후 Android Studio 혹은 VSCode 에서 실행
+
+**루트 폴더에 .env 생성 후 BASE_URL='사용할 address' 설정해줘야 실행 가능합니다.** 
+
 
 ### 사용 플러그인
 - bixolon_btprinter
