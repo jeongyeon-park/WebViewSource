@@ -33,6 +33,7 @@ sendSample() {
 ```
 **데이터를 JSON 배열 양식으로 보냅니다.** 
 **JSON 배열 첫 요소가 {barcode : true} 혹은 {barcode : false} 여야 합니다.**
+**접속 WIFI 주소가 cw 로 시작하는 WIFI 여야 접근할 수 있습니다.**
 
 아래와 같이 flutter 소스에서 배열 첫 요소의 barcode 값이 true 냐 false 이냐에 따라
 분기가 나뉘기 때문입니다. 
